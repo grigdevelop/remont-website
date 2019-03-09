@@ -1,0 +1,189 @@
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+        <h2>Калькулятор</h2>
+        <br/>
+        
+        <div class="row"> <!-- START ROW -->
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">ТИП ПОМЕЩЕНИЯ</label>
+                    <select ng-model="calcData.placeType" class="form-control">
+                        <option value="0">Выберите тип помещения</option>
+                        <option value="Квартира">Квартира</option>
+                        <option value="Коттедж">Коттедж</option>
+                        <option value="Офис">Офис</option>
+                        <option value="Бар, ресторан">Бар, ресторан</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Тип ремонта</label>
+                    <select ng-model="calcData.repairType" class="form-control">
+                        <option value="0">Выберите тип ремонта</option>
+                        <option value="Капитальный">Капитальный</option>
+                        <option value="Косметический">Косметический</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Пложадь(М2)</label>
+                            <input ng-model="calcData.square" type="number" class="form-control" placeholder="Введите м2">
+                        </div>                            
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Кол-во стен</label>
+                            <input ng-model="calcData.wallsCount" type="number" class="form-control" placeholder="Число стен">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div> <!-- END ROW -->
+        
+        <hr/>
+        
+        <div class="row"> <!-- START ROW -->
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Требуется ремонт стен?</label>
+                    <select class="form-control" >
+                        <option value="Штукатурка (выравнивание стен)">Штукатурка (выравнивание стен)</option>
+                        <option value="Оклейка стен обоями">Оклейка стен обоями</option>
+                        <option value="Облицовка стен">Облицовка стен</option>
+                        <option value="Демонтаж штукатурки со стен">Демонтаж штукатурки со стен</option>
+                        <option value="Разборка перегородки">Разборка перегородки</option>
+                        <option value="Пробивка проема в стене">Пробивка проема в стене</option>
+                        <option value="Другое">Другое</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Требуется ремонт полов?</label>
+                    <select class="form-control">
+                        <option value="Укладка плитки">Укладка плитки</option>
+                        <option value="Монтаж плинтуса">Монтаж плинтуса</option>
+                        <option value="Укладка ламината">Укладка ламината</option>
+                        <option value="Снятие паркета">Снятие паркета</option>
+                        <option value="Демонтаж плинтуса">Демонтаж плинтуса</option>
+                        <option value="Демонтаж линолеума">Демонтаж линолеума</option>
+                        <option value="Другое">Другие работы</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                <div class="form-group">
+                    <label class="control-label">Требуется ремонт потолка?</label>
+                    <select class="form-control">
+                        <option value="Выравнивание потолка">Выравнивание потолка</option>
+                        <option value="Проклейка потолка армировочной сеткой">Проклейка потолка армировочной сеткой</option>
+                        <option value="Шпатлёвка и шлифовка потолка">Шпатлёвка и шлифовка потолка</option>
+                        <option value="Оклейка потолка обоями">Оклейка потолка обоями</option>
+                        <option value="Лакировка потолка">Лакировка потолка</option>
+                        <option value="Очистка потолка">Очистка потолка</option>
+                        <option value="Другое">Другое</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+        </div> <!-- END ROW -->
+        
+        <hr/>
+        
+        <div class="row"> <!-- START ROW -->
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Установка дверей?</label>
+                    <select class="form-control">
+                        <option value="Установка одностворчатой двери">Установка одностворчатой двери</option>
+                        <option value="Установка двустворчатой двери">Установка двустворчатой двери</option>
+                        <option value="Установка доводчика двери">Установка доводчика двери</option>
+                        <option value="Покраска дверей с двух сторон">Покраска дверей с двух сторон</option>
+                        <option value="Установка раздвижной двери">Установка раздвижной двери</option>
+                        <option value="Демонтаж дверного блока">Демонтаж дверного блока</option>
+                        <option value="Другое">Другое</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="control-label">Ремонт, установка сантехники?</label>
+                    <select class="form-control">
+                        <option value="Установка ванны">Установка ванны</option>
+                        <option value="Установка душевой кабины">Установка душевой кабины</option>
+                        <option value="Установка раковины">Установка раковины</option>
+                        <option value="Установка водонагревателя">Установка водонагревателя</option>
+                        <option value="Монтаж труб канализации ">Монтаж труб канализации</option>
+                        <option value="Установка счетчиков ХВС,ГВС">Установка счетчиков ХВС,ГВС</option>
+                        <option value="Другое">Другое</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                <div class="form-group">
+                    <label class="control-label">Электромонтажные работы?</label>
+                    <select class="form-control">
+                        <option value="Монтаж провода">Монтаж провода</option>
+                        <option value="Штробление под провод">Штробление под провод</option>
+                        <option value="Монтаж счетчика">Монтаж счетчика</option>
+                        <option value="Монтаж люстры">Монтаж люстры</option>
+                        <option value="Замена эл.счётчика">Замена эл.счётчика</option>
+                        <option value="Монтаж розетки для электроплиты">Монтаж розетки для электроплиты</option>
+                        <option value="Другое">Другое</option>
+                        <option value="Не требуется">Не требуется</option>
+                        <option value="Требуется полный комплекс работ">Требуется полный комплекс работ</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+        </div> <!-- END ROW -->
+        
+        <hr/>
+        
+        <div class="row"> <!-- START ROW -->
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Ваше имя">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Ваш телефон">                        
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                <div class="form-group">
+                    <button ng-click="onClick()" type="button" class="btn btn-primary">Узнать стоимость ремонта</button>
+                </div>
+                
+            </div>
+            
+        </div> <!-- END ROW -->
+        
+    </div>
