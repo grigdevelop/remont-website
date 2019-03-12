@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
+html, body{
+  background-color: whitesmoke;
+}
+
+body {  
+  font-family: Myriad Pro;
+  padding-bottom: 20px;
+}
+
+.masthead {
+  nav ul li{
+    a{
+      color: white;
+      font-size: 20px;
+      font-weight: normal;
+  
+      &:hover{
+        color: black;
+      }    
+
+      &:focus{
+        color: black;
+        background-color: whitesmoke;
+      }
+    }
+  } 
+}
+
+.m-heading {
+  height: 280px;
+  background-image: url('../img/header_back.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .m-heading-cover{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+  }
+}
+
+.m-nav{
+  margin-top: -47px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:767px){
+  .m-heading{
+    height: 120px;
+  }
+}
+@media(min-width:768px){
+  .m-heading{
+    height: 200px;;
+  }
+}
+@media(min-width:992px){
+  .m-heading{
+    height: 280px;
+  }
+}
+@media(min-width:1200px){
+
+}

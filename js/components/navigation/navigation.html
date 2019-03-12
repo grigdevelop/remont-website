@@ -1,21 +1,12 @@
 <!-- Static navbar -->
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Ремонт квартир</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">О компании</a></li>                                             
-                <li ><a ng-class="{active: $route.current.activetab == 'repair'}" href="#!/repair">Ремонт и отделка</a></li>                                             
-                <li ><a href="#">Услуги</a></li>                                             
-            </ul>                    
-        </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-</nav>
+<div class="masthead">
+    <nav>              
+        <ul class="nav nav-justified">
+            <li class="active"><a href="#">О компании</a></li>                                             
+            <li ><a href="#!/repair">Ремонт и отделка</a></li>                                             
+            <li ><a href="#">Услуги</a></li>                                             
+            <li ><a href="#">Отзывы</a></li>                                             
+            <li ><a href="#">Окна и двери</a></li>                                             
+        </ul>                            
+    </nav>
+</div>

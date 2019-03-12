@@ -2,11 +2,21 @@
 <html lang="ru" ng-app="repairApp">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" />
-    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet/less" type="text/css" href="styles/app.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
 </head>
 <body>
+    <div class="m-heading">
+        <div class="m-heading-cover">
+        </div>
+    </div>
+    <div class="m-nav">
+        <div class="container">
+            <navigation></navigation>        
+        </div>
+    </div>
+    
     <div class="container">        
-        <navigation></navigation>        
         <!-- <calculator></calculator>     -->
         <div ng-view></div>    
     </div> <!-- /container -->
