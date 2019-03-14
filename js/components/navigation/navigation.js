@@ -1,9 +1,14 @@
 (function(){
+    function NavigationController($scope, navService){
+        $scope.currentPage = 'about';
+        navService.onPageChanged(function(page){
+            $scope.currentPage = page;
+        });
+    }
+
     angular.module('repairApp')
         .component('navigation', {
             templateUrl: 'js/components/navigation/navigation.html',
-            controller: function NavigationController(){
-                
-            }
+            controller: ['$scope','navService',NavigationController]
         });
 })();

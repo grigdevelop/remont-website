@@ -1,6 +1,6 @@
 (function(){
-    function RepairController(){
-        
+    function RepairController(navService){
+        navService.setPage('repair');
     }
     
     angular.module('repairApp.views')
@@ -11,5 +11,5 @@
             activetab: 'repair'
         });
     }])
-    .controller('RepairCtrl', [RepairController]);
+    .controller('RepairCtrl', ['navService',RepairController]);
 })();

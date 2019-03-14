@@ -1,6 +1,6 @@
 (function(){
-    function AboutController(){
-        
+    function AboutController(navService){
+        navService.setPage('about');
     }
     
     angular.module('repairApp.views')
@@ -11,5 +11,5 @@
             activetab: 'about'
         });
     }])
-    .controller('AboutCtrl', [AboutController]);
+    .controller('AboutCtrl', ["navService", AboutController]);
 })();
